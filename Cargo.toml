@@ -29,6 +29,7 @@ pedantic = "warn"
 
 [package]
 name = "text-splitter"
+edition = "2021"
 # version.workspace = true
 # authors.workspace = true
 # edition.workspace = true
@@ -51,7 +52,6 @@ exclude = [
     "*.yml",
     "*.yaml",
 ]
-rust-version = "1.75.0"
 
 [package.metadata.docs.rs]
 all-features = true
