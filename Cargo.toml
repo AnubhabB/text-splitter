@@ -70,7 +70,7 @@ regex = "1.10.5"
 rust_tokenizers = { version = "8.1.1", optional = true }
 strum = { version = "0.26.3", features = ["derive"] }
 thiserror = "1.0.61"
-tiktoken-rs = { version = "*", optional = true }
+tiktoken-rs = { git = "https://github.com/AnubhabB/tiktoken-rs", branch = "main", optional = true }
 tokenizers = { version = "0.19.1", default-features = false, features = [
     "onig",
 ], optional = true }

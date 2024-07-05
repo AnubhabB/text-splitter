@@ -1877,7 +1877,7 @@ dependencies = [
  "auto_enums",
  "pyo3",
  "text-splitter",
- "tiktoken-rs",
+ "tiktoken-rs 0.5.9 (registry+https://github.com/rust-lang/crates.io-index)",
  "tokenizers",
  "tree-sitter",
 ]
@@ -2128,7 +2128,7 @@ dependencies = [
  "rust_tokenizers",
  "strum",
  "thiserror",
- "tiktoken-rs",
+ "tiktoken-rs 0.5.9 (git+https://github.com/AnubhabB/tiktoken-rs?branch=main)",
  "tokenizers",
  "tree-sitter",
  "tree-sitter-rust",
@@ -2163,6 +2163,20 @@ checksum = "c314e7ce51440f9e8f5a497394682a57b7c323d0f4d0a6b1b13c429056e0e234"
 dependencies = [
  "anyhow",
  "base64 0.21.7",
+ "bstr",
+ "fancy-regex",
+ "lazy_static",
+ "parking_lot",
+ "rustc-hash",
+]
+
+[[package]]
+name = "tiktoken-rs"
+version = "0.5.9"
+source = "git+https://github.com/AnubhabB/tiktoken-rs?branch=main#e139ac2b32c2939f5394f43df702c1438596c71b"
+dependencies = [
+ "anyhow",
+ "base64 0.13.1",
  "bstr",
  "fancy-regex",
  "lazy_static",
