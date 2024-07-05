@@ -29,14 +29,14 @@ pedantic = "warn"
 
 [package]
 name = "text-splitter"
-version.workspace = true
-authors.workspace = true
-edition.workspace = true
-description.workspace = true
-repository.workspace = true
-license.workspace = true
-keywords.workspace = true
-categories.workspace = true
+# version.workspace = true
+# authors.workspace = true
+# edition.workspace = true
+# description.workspace = true
+# repository.workspace = true
+# license.workspace = true
+# keywords.workspace = true
+# categories.workspace = true
 exclude = [
     ".github/**",
     ".vscode/**",
@@ -70,7 +70,7 @@ regex = "1.10.5"
 rust_tokenizers = { version = "8.1.1", optional = true }
 strum = { version = "0.26.3", features = ["derive"] }
 thiserror = "1.0.61"
-tiktoken-rs = { version = "0.5.9", optional = true }
+tiktoken-rs = { version = "*", optional = true }
 tokenizers = { version = "0.19.1", default-features = false, features = [
     "onig",
 ], optional = true }
